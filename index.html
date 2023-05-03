@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body class="container">
+    <header>
+        <div class="title">
+            <h1>Controle de livros</h1>
+        </div>
+        <div id="imagem" class="banner">
+            <img class="img-responsive" src="img/livros.jpg" alt="">
+        </div>
+    </header>
+    <br>
+  
+    <section id="cadastro">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Cadastro de Livros</h4>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="nomeDoLivro">Livro</label>
+                        <input type="text" placeholder="Livro" class="form-control" id="nomeDoLivro"><br>
+                        <label for="autorDoLivro">Autor</label>
+                        <input type="text" placeholder="Autor" class="form-control" id="autorDoLivro"><br>
+                        <label for="editoraDoLivro">Editora</label>
+                        <input type="text" placeholder="Editora" class="form-control" id="editoraDoLivro"><br>
+                        <label for="valorDoLivro">Valor</label>
+                        <input type="number" placeholder="Valor" class="form-control" id="valorDoLivro"><br>
+                        <label for="tipoLivro">Tipo de Livro</label>
+                        <select class="form-select" id="tipoLivro">
+                            <option value="fisico">Fisico</option>
+                            <option value="digital">Digital</option>
+                        </select><br>
+                        <button type="button" title="Adicionar Livro" class="btn btn-sm btn-primary"
+                            onclick="adicionarLivro()">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Tabela com items existentes -->
+    <section class="items card">
+        <table id="tabela" class="table-responsive">
+            <tr>
+                <th>Livro</th>
+                <th>Autor</th>
+                <th>Valor</th>
+                <th>Editora</th>
+                <th>TipoLivro</th>
+                <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px"></th>
+            </tr>
+        </table>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
